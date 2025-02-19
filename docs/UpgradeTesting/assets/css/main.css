@@ -6,9 +6,11 @@ body {
     font-weight: 400;
     font-style: normal;
     background: #06101F;
-    color: #FFF5DA;
+    color: #fcfaf0;
     font-size: 1.3vw;
-
+    overflow-x: hidden;
+    margin: 20vw;
+    padding: 0;
     scrollbar-width: thin;
 }
     body.modal-open {
@@ -27,7 +29,27 @@ body {
         background: transparent; 
     }
 
+.body-wrapper::before,
+.body-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 18%;
+    /*background-color: #fff9d9;*/
+    background-color: #c5fcc6;
+    background: linear-gradient(to right, #def1ff 62%, rgba(222, 241, 255, 0) 75%);
+    z-index: -1;
+    height: 250vh;
+}
 
+.body-wrapper::before {
+    left: 0;
+}
+
+.body-wrapper::after {
+    right: 0;
+    background: linear-gradient(to left, #def1ff 62%, rgba(222, 241, 255, 0) 75%);
+}
 
 .modal {
     display: none;
@@ -82,8 +104,8 @@ body {
 
 .close {
     position: absolute;
-    top: 22.5vh;
-    right: 26.5vw;
+    top: 14%;
+    right: 25%;
     color: #aaa;
     font-size: 28px;
     font-weight: bold;
@@ -147,9 +169,9 @@ body {
 
 .carousel-container {
     position: relative;
-    width: 60%;
+    width: 80%;
     margin: auto;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -162,7 +184,7 @@ body {
     scroll-behavior: smooth;
     padding: 10px;
     white-space: nowrap;
-    max-width: 600px;
+    max-width: 50vw;
 }
 
     .carousel::-webkit-scrollbar {
