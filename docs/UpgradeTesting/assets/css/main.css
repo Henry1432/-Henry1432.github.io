@@ -34,10 +34,10 @@ body {
     content: "";
     position: absolute;
     top: 0;
-    width: 18%;
+    width: 20%;
     /*background-color: #fff9d9;*/
     background-color: #c5fcc6;
-    background: linear-gradient(to right, #def1ff 62%, rgba(222, 241, 255, 0) 75%);
+    background: linear-gradient(to right, #def1ff 62%, rgba(222, 241, 255, 0) 72%);
     z-index: -1;
     height: 250vh;
 }
@@ -48,7 +48,7 @@ body {
 
 .body-wrapper::after {
     right: 0;
-    background: linear-gradient(to left, #def1ff 62%, rgba(222, 241, 255, 0) 75%);
+    background: linear-gradient(to left, #def1ff 62%, rgba(222, 241, 255, 0) 72%);
 }
 
 .modal {
@@ -100,20 +100,6 @@ body {
 }
     .modal-content::-webkit-scrollbar {
         width: 0vw; /* Makes scrollbar thinner */
-    }
-
-.close {
-    position: absolute;
-    top: 14%;
-    right: 25%;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-    .close:hover {
-        color: white;
     }
 
 .projectButton {
