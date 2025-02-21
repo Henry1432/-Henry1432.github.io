@@ -13,7 +13,7 @@
 		<h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: bold; position: absolute; top: 2vh; left: 50%; transform: translateX(-50%);">Henry Bennett</h2>
 
 		<div class="card-holder" style="position:relative; top: -6vh">
-			<div class="card" style="background-color: #0e3066;">
+			<div class="card">
 				<div class="card-image-placeholder"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2.2rem);">Project 1</h3>
@@ -21,7 +21,7 @@
 					<button class="projectButton" id="project1" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
 				</div>
 			</div>
-			<div class="card" style="background-color: #014719;">
+			<div class="card">
 				<div class="card-image-placeholder"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2.2rem);">Project 2</h3>
@@ -29,7 +29,7 @@
 					<button class="projectButton" id="project2" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
 				</div>
 			</div>
-			<div class="card" style="background-color: #9e5d02;">
+			<div class="card">
 				<div class="card-image-placeholder"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2.2rem);">Project 3</h3>
@@ -39,7 +39,7 @@
 			</div>
 
 
-			<div class="card" style="background-color: #39015c;">
+			<div class="card">
 				<div class="card-image-placeholder"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Project 4</h3>
@@ -187,6 +187,10 @@
 				console.log("right")
 			}
 
+            function getRandomInRange(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
 			//project 1
 			const modal1 = document.getElementById("project1Modal");
 			const btn1 = document.getElementById("project1");
@@ -243,6 +247,49 @@
 					document.body.classList.remove("modal-open");
 				}
 			};
+
+            const colors = ["#0F326D", "#004B1A", "#9C5B00", "#3E005C", "#7A1C1C", "#167D7F", "#8f3d53", "#2e4d63", "#443866", "#7a4d77", "#567358"];
+			const bubbles = document.querySelectorAll(".bubble span");
+			const cards = document.querySelectorAll(".card");
+			let pastGen = getRandomInRange(0, colors.length - 1);
+			let lastGen = getRandomInRange(0, colors.length - 1);
+			let colorPick = getRandomInRange(0, colors.length - 1);
+
+
+			bubbles.forEach((bubble, index) => {
+				while (colorPick == lastGen || colorPick == pastGen) {
+					colorPick = getRandomInRange(0, colors.length - 1);
+				}
+				pastGen = lastGen;
+				lastGen = colorPick;
+                bubble.style.backgroundColor = colors[colorPick];
+			});
+
+            cards.forEach((card, index) => {
+                while (colorPick == lastGen || colorPick == pastGen) {
+                    colorPick = getRandomInRange(0, colors.length - 1);
+                }
+                pastGen = lastGen;
+                lastGen = colorPick;
+                card.style.backgroundColor = colors[colorPick];
+			});
+
+            function updateGradientHeight() {
+                const bodyHeight = Math.max(
+                    document.body.scrollHeight,
+                    document.documentElement.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.offsetHeight,
+                    document.body.clientHeight,
+                    document.documentElement.clientHeight
+                );
+
+                document.documentElement.style.setProperty('--full-height', `${bodyHeight}px`);
+            }
+
+            window.addEventListener("load", updateGradientHeight);
+            window.addEventListener("resize", updateGradientHeight);
+
 		</script>
 	</body>
 </html>

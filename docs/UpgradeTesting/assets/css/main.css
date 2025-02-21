@@ -39,7 +39,7 @@ body {
     background-color: #b5ffde;
     background: linear-gradient(to right, #b5ffde 62%, rgba(181, 255, 222, 0) 72%);
     z-index: -1;
-    height: 250vh;
+    height: var(--full-height);
 }
 
 .body-wrapper::before {
@@ -122,9 +122,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
+    gap: 1vw;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 120%;
 }
 .card {
     display: flex;
@@ -209,9 +209,3 @@ body {
             font-size: clamp(1rem, 1vw, 2rem);
             background-color: #103361;
         }
-
-    .bubble p {
-        margin: 5px 0 0;
-        color: white;
-        font-size: 14px;
-    }
