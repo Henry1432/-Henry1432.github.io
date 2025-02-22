@@ -10,7 +10,9 @@
 	<script defer data-domain="henry1432.github.io/-Henry1432.github.io/" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
 	<body class="body-wrapper">
 
-		<h2 style="font-size: clamp(2rem, 4vw, 3rem); font-weight: bold; position: absolute; top: 2vh; left: 50%; transform: translateX(-50%);">Henry Bennett</h2>
+		<div class="section-title" style="top: -18vh;">
+			<h2 style="position: absolute; top:-10vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
+		</div>
 
 		<div class="card-holder" style="position:relative; top: -6vh">
 			<div class="card">
@@ -255,6 +257,8 @@
 			let lastGen = getRandomInRange(0, colors.length - 1);
 			let colorPick = getRandomInRange(0, colors.length - 1);
 
+            let sidePanels = getRandomInRange(0, colors.length - 1);
+
 
 			bubbles.forEach((bubble, index) => {
 				while (colorPick == lastGen || colorPick == pastGen) {
@@ -285,6 +289,7 @@
                 );
 
                 document.documentElement.style.setProperty('--full-height', `${bodyHeight}px`);
+                document.documentElement.style.setProperty('--side-panels', `${colors[sidePanels]} 62%`);
             }
 
             window.addEventListener("load", updateGradientHeight);

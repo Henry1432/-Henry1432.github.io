@@ -5,7 +5,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: #06101F;
+    background: #0f0f0f;
     color: #fcfaf0;
     font-size: 1.3vw;
     overflow-x: hidden;
@@ -37,7 +37,7 @@ body {
     width: 20%;
     /*background-color: #fff9d9;*/
     background-color: #b5ffde;
-    background: linear-gradient(to right, #b5ffde 62%, rgba(181, 255, 222, 0) 72%);
+    background: linear-gradient(to right, var(--side-panels), rgba(0, 0, 0, 0) 72%);
     z-index: -1;
     height: var(--full-height);
 }
@@ -48,7 +48,7 @@ body {
 
 .body-wrapper::after {
     right: 0;
-    background: linear-gradient(to left, #b5ffde 62%, rgba(181, 255, 222, 0) 72%);
+    background: linear-gradient(to left, var(--side-panels), rgba(0, 0, 0, 0) 72%);
 }
 
 .modal {
@@ -66,24 +66,6 @@ body {
     font-weight: 400;
     font-style: normal;
     color: #FFF5DA;
-}
-
-.modal-content {
-    background-color: white;
-    color: white;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 50%;
-    text-align: center;
-    overflow-y: scroll;
-    max-height: 70vh;
-
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #FFF5DA;
-    font-size: 1.3vw;
 }
 
 .modal-content {
@@ -108,15 +90,16 @@ body {
     padding: 10px 20px;
     text-align: center;
     border-radius: 5px;
+    border: 0.5vh solid #fcfaf0;
     background-color: #007bff;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
-.projectButton:hover {
-    background-color: #0056b3;
-}
+    .projectButton:hover {
+        background-color: #0056b3;
+        border: 0.75vh solid #fcfaf0;
+    }
 
 .card-holder {
     display: flex;
@@ -131,14 +114,10 @@ body {
     flex-direction: column;
     width: 300px;
     border-radius: 15px;
+    border: 0.75vh solid #fcfaf0;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px;
-}
-
-.card-image {
-    width: 100%;
-    height: auto;
 }
 
 .card-content {
@@ -204,7 +183,7 @@ body {
             font-weight: 700;
             color: #fcfaf0;
             border: 0.5vh solid #fcfaf0;
-            border-radius: 50px;
+            border-radius: 15px;
             padding: 5px 15px;
             font-size: clamp(1rem, 1vw, 2rem);
             background-color: #103361;
