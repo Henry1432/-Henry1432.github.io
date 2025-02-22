@@ -90,8 +90,8 @@ body {
     padding: 10px 20px;
     text-align: center;
     border-radius: 5px;
-    border: 0.5vh solid #fcfaf0;
-    background-color: #007bff;
+    border: 0.35vh solid #fcfaf0;
+    background-color: var(--read-more);
     color: white;
     cursor: pointer;
 }
@@ -114,7 +114,7 @@ body {
     flex-direction: column;
     width: 300px;
     border-radius: 15px;
-    border: 0.75vh solid #fcfaf0;
+    border: 0.5vh solid #fcfaf0;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     margin: 20px;
@@ -145,7 +145,7 @@ body {
 }
 
     .section-title h2 {
-        font-size: clamp(2rem, 4vw, 3rem);
+        font-size: clamp(1.5rem, 4vw, 3rem);
         font-weight: 650;
         color: #fcfaf0;
         margin: 0;
@@ -182,7 +182,7 @@ body {
             display: inline-block;
             font-weight: 700;
             color: #fcfaf0;
-            border: 0.5vh solid #fcfaf0;
+            border: 0.4vh solid #fcfaf0;
             border-radius: 15px;
             padding: 5px 15px;
             font-size: clamp(1rem, 1vw, 2rem);

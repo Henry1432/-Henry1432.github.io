@@ -10,11 +10,11 @@
 	<script defer data-domain="henry1432.github.io/-Henry1432.github.io/" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
 	<body class="body-wrapper">
 
-		<div class="section-title" style="top: -18vh;">
-			<h2 style="position: absolute; top:-10vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
+		<div class="section-title" style="top: clamp(-20vh, -7vw, -7vw); ">
+			<h2 style="position: absolute; top:-8vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
 		</div>
 
-		<div class="card-holder" style="position:relative; top: -6vh">
+		<div class="card-holder" style="position:relative; top: -2vh">
 			<div class="card">
 				<div class="card-image-placeholder"></div>
 				<div class="card-content">
@@ -250,33 +250,56 @@
 				}
 			};
 
-            const colors = ["#0F326D", "#004B1A", "#9C5B00", "#3E005C", "#7A1C1C", "#167D7F", "#8f3d53", "#2e4d63", "#443866", "#7a4d77", "#567358"];
-			const bubbles = document.querySelectorAll(".bubble span");
-			const cards = document.querySelectorAll(".card");
-			let pastGen = getRandomInRange(0, colors.length - 1);
-			let lastGen = getRandomInRange(0, colors.length - 1);
-			let colorPick = getRandomInRange(0, colors.length - 1);
+			function colorPick() {
+				const colors = ["#0F326D", "#004B1A", "#9C5B00", "#3E005C", "#7A1C1C", "#167D7F", "#8f3d53", "#2e4d63", "#443866", "#7a4d77", "#567358"];
+				const bubbles = document.querySelectorAll(".bubble span");
+				const cards = document.querySelectorAll(".card");
+				let pastGen = getRandomInRange(0, colors.length - 1);
+				let lastGen = getRandomInRange(0, colors.length - 1);
+				let colorPick = getRandomInRange(0, colors.length - 1);
 
-            let sidePanels = getRandomInRange(0, colors.length - 1);
+				let sideColor = colors[getRandomInRange(0, colors.length - 1)];
 
+				bubbles.forEach((bubble, index) => {
+					while (colorPick == lastGen || colorPick == pastGen) {
+						colorPick = getRandomInRange(0, colors.length - 1);
+					}
+					pastGen = lastGen;
+					lastGen = colorPick;
+				    bubble.style.backgroundColor = colors[colorPick];
+				});
+				let cardColors = ["#FFFFFF"];
+				cards.forEach((card, index) => {
+				    while (colorPick == lastGen || colorPick == pastGen) {
+						colorPick = getRandomInRange(0, colors.length - 1);
+				    }
+				    pastGen = lastGen;
+				    lastGen = colorPick;
+					cardColors.push(colors[lastGen]);
 
-			bubbles.forEach((bubble, index) => {
-				while (colorPick == lastGen || colorPick == pastGen) {
-					colorPick = getRandomInRange(0, colors.length - 1);
+					card.style.backgroundColor = colors[colorPick];
+				});
+
+				let buttonColor = colors[getRandomInRange(0, colors.length - 1)];
+				while (buttonColor == sideColor || cardColors.includes(buttonColor)) {
+				    buttonColor = colors[getRandomInRange(0, colors.length - 1)];
 				}
-				pastGen = lastGen;
-				lastGen = colorPick;
-                bubble.style.backgroundColor = colors[colorPick];
-			});
+				document.documentElement.style.setProperty('--side-panels', `${sideColor} 62%`);
+				document.documentElement.style.setProperty('--read-more', `${buttonColor}`);
+			}
+			document.addEventListener("DOMContentLoaded", function () { colorPick(); });
+			let pickColor = false;
+            let lastScrollY = window.scrollY;
+            window.onscroll = function (ev) {
+                if ((window.innerHeight + window.scrollY - 600) >= document.body.offsetHeight) {
+					pickColor = true;
+				}
 
-            cards.forEach((card, index) => {
-                while (colorPick == lastGen || colorPick == pastGen) {
-                    colorPick = getRandomInRange(0, colors.length - 1);
-                }
-                pastGen = lastGen;
-                lastGen = colorPick;
-                card.style.backgroundColor = colors[colorPick];
-			});
+				if (pickColor == true && (window.innerHeight + window.scrollY - 600) < document.body.offsetHeight) {
+					colorPick();
+					pickColor = false;
+				}
+            };
 
             function updateGradientHeight() {
                 const bodyHeight = Math.max(
@@ -289,7 +312,6 @@
                 );
 
                 document.documentElement.style.setProperty('--full-height', `${bodyHeight}px`);
-                document.documentElement.style.setProperty('--side-panels', `${colors[sidePanels]} 62%`);
             }
 
             window.addEventListener("load", updateGradientHeight);
