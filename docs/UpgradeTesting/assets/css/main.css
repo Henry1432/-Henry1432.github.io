@@ -97,8 +97,8 @@ body {
 }
 
     .projectButton:hover {
-        background-color: #0056b3;
-        border: 0.75vh solid #fcfaf0;
+        background-color: var(--read-more);
+        border: 0.8vh solid #fcfaf0;
     }
 
 .card-holder {
