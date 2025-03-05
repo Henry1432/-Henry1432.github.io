@@ -2,10 +2,7 @@
   "ExpandedNodes": [
     "",
     "\\assets",
-    "\\assets\\css",
-    "\\UpgradeTesting",
-    "\\UpgradeTesting\\assets",
-    "\\UpgradeTesting\\assets\\css"
+    "\\assets\\css"
   ],
   "SelectedNode": "\\assets\\css\\main.css",
   "PreviewInSolutionExplorer": false
