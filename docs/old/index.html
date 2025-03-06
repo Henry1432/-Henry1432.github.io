@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta tag -->
+		<meta charset="utf-8">
+		<meta name="First Port" content="This is a web portfolio outlining some of Henry Bennett's experience through their college carear">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Henry Bennett Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+	<script defer data-domain="henryprofile.tiiny.co" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+	<body>
+		<div class = "container">
+			<header>
+				<nav>
+					<ul>
+						<!--<li><a href="./index.html">Home</a></li>-->
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section id = "introduction">
+					<div class="title"><h1 class = "lato bold">Welcome</h1></div>
+					<div class="subtitle"><a class = "lato regular" href = "https://www.linkedin.com/in/real-henry-bennett/">https://www.linkedin.com/in/real-henry-bennett/</a></div>
+				</section>
+
+				<h1 class = "lato bold">Introduction</h1>
+				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Champlain College is uniquely geared toward the idea of growth through constant pressure. If you can juggle five or six classes all <bold>demanding 100%</bold> of your attention while in a demanding social environment, you’re bound to learn something. Exiting this crucible, I am now able to produce engaging creative products through effective communication and problem solving in high pressure situations. I feel that the best example of this is my 2024 spring semester, so I'll be describing a select few projects.
+</p>
+			</main>
+
+			<aside1>
+				<img src="./assets/images/profile.jpg" alt="An image of Henry" class = "profile"/>
+			</aside1>
+			<main>
+				<h1 class = "lato bold left" style = "margin-top: 0%">Experience in AI</h1>
+				<p class = "lato regular left" style = "margin-bottom: -10%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I began my formal education in the use of artificial intelligence within game development during my time in Montreal. I have been learning about Neural Networks, LLMs, and other AI-driven technologies for a long time, but taking a complex problem and implementing this type of dynamic solution is a different beast entirely. At this point I have extensive experience in this area, and I feel that a good example is my Tak Project.</p>
+			</main>
+			<aside2>
+				<img src="./assets/images/TakImage.jpg" alt="An image of Tak" class = "takImage"/>
+			</aside2>
+
+			<main>
+				<h2 class = "lato bold" style="display: inline; argin-top: -10%;">Tak</h2> 
+				<div class="colorLink" style="display: inline;">
+    			<a class="lato light" href="./build/BuildShow.zip" download="BuildShow.zip" style="display: inline;">(Build)</a></div>
+				<p class = "lato regular" style="margin-bottom: 25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tak was originally a fictional board game imagined by Patrick Rothfuss. This board game is similar to tic tac toe, except with a few modifications that make the game feel almost similar to chess. Once I had a playable version of the game running I could start working on an AI to play against.</p>
+				<p class = "lato regular right" style = "margin-bottom: -5%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For the first attempt I implemented <bold>Alpha Beta Pruning</bold>, which has pros and cons. The implementation was sound, however the concept of MiniMaxing as a whole is not optimal for a game like Tak. It has countless board states especially as the stones(game pieces) stack higher. When MiniMaxing generates the full breadth of future boards the “right” heuristic will find the “right” move. This works for small scale things and struggles here.  No matter how much optimization you throw at the problem, given the number of legal moves allowed, searching beyond 3 or 4 moves with a game like this is infeasible <bold>for this algorithm.</bold></p>
+			</main>
+			<aside1>
+				<img src="./assets/gifs/Tak.gif" alt="An gif of Tak" class = "takGif"/>
+			</aside1>
+
+			<main>
+				<p class = "lato regular" style="margin-bottom: 20%;margin-top: -30%; margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After this experience I worked with a friend on some more well-trodden ground, a chess algorithm.</p>
+			</main>
+
+			<main>
+				<h2 class = "lato bold left" style="margin-left: 40%; margin-right: -10%; margin-top: -20%">Chess Investigation</h2>
+				<p class = "lato regular left" style="margin-left: 40%; margin-right: -10%; margin-top: -15%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We investigated several different search algorithms and to implement them effectively.  After some deliberation we decided to implement the <bold>Monte Carlo Tree Search</bold>. This algorithm is particularly good with the sorts of constraints games like chess and tak deal with, and resembles how I think about problem solving. Try to analyze what the “best” move is and don't think about the rest. This algorithm's strength is also its greatest pitfall. Similar to humans, it can’t think of everything; being based on whatever random moves it analyzes using a heuristic to value check the boards produced.</p>
+			</main>
+			<aside2>
+				<img src="./assets/gifs/chess.gif" alt="An gif of chess" class = "chessGif"/>
+			</aside2>
+			<main>
+				<p class = "lato regular" style="margin-top: -10%; margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While this algorithm is not perfect it is extremely effective, securing fourth place in the class chess tournament!  I also particularly like it, not despite, but because of its human flair. With this investigation and contest aside we can talk about next steps.</p>
+				<h2 class = "lato bold" style="margin-top: 3%">Next Steps</h2>
+					<p class = "lato regular" style="margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The board game is fine on its own. I might use the experience I’ve gained since I made this project to tighten up the optimization, but the main thing is altering the strategy of the bot. This sounds intimidating at first, but based on my experience in system architecture I could make the MCTS in its own ecosystem and then slot it in place of the old algorithm without skipping a beat! I’ll update the state of this project as I get the time to complete these steps if I choose to revisit this project.</p>
+				<h1 class = "lato bold right" style="margin-top: 8%;">Graphics Programming</h1>
+				<p class = "lato regular left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the average Game Programming problem is like a jigsaw puzzle, fitting algorithms and designs together to create a powerful solution, I would describe Graphics Programming like fixing a pocket watch. Each tiny gear has its perfect place, and if any piece falls out then the whole system goes kaput.  All of this to say, despite not really enjoying the poorly supported process of debugging graphics programming, I am familiar persevering through difficulty to get great results.</p>
+			</main>
+			<aside2>
+				<img src="./assets/gifs/Kuwahara1.gif" alt="An gif of Kuwahara" style="margin-right: -140%; margin-bottom: -20%;" class = "Kuwahara right"/>
+			</aside2>
+			<main>
+				<h2 class = "lato bold" style="margin-top: -15%">Comic Book Filter</h2>
+				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using these encapsulated, delicate tools, with the larger skills of game programming that I have mastered I can create customized effects that are especially fascinating. During this project I was once again working in a team, using procedural generation with post processing effects to stylize randomized scenes. I implemented the Kuwahara Filter to tailor the look of our project.</p>
+			</main>
+			<aside1>
+				<!--<img src="./assets/gifs/ComicFilter.gif" alt="An gif of ComicFilter" style="margin-right: -160%" class = "Comic right"/>-->
+				<!--<img src="./assets/images/cave.jpg" alt="An image of generated cave" style="margin-right: -160%" class = "CaveImage right"/>-->
+				<!--<img src="./assets/gifs/Cave.gif" alt="A gif of generated cave" style="margin-right: -150%" class = "CaveImage right"/>-->
+				<video class="CaveVid" width="460" autoplay muted loop playsinline >
+  					<source src="./assets/gifs/Cave.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</aside1>
+			<main>
+				<h2 class = "lato bold" style="margin-top: -10%">A Brief History</h2>
+				<p class = "lato regular">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Kuwahara filter, known for its painterly effect, was originally invented in Japan as heart image denoising software in the 1970s. This is why it creates the blocks of color, resembling brush strokes. </p>
+
+				<h2 class = "lato bold left" style="margin-top: 3%;">Updates!</h2>
+				<p class = "lato regular left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Building on this foundation using a few other techniques we can tweak the look! Some blur here, a depth based outline filter there, and presto we can update this filter from the 70s to get a new effect! This stylistically aligns with my vision, but it is not optimized. In its current state the filter is an interesting exercise but not universally supported. If I were to actually use this in a game I would need to focus on optimizing these effects.</p>
+			</main>
+			<aside2>
+				<img src="./assets/gifs/ComicFilter.gif" alt="An gif of ComicFilter" style="margin-right: -140%" class = "Comic right"/>
+			</aside2>
+
+			<aside1>
+				<img src="./assets/images/TabbyTower.png" alt="A gif of TabbyTower" style="margin-right: -175%; margin-bottom: -5%;" class = "TabbyTowerImg right"/>
+			</aside1>
+			<main>
+				<h1 class = "lato bold" style="margin-top: -20%;">Studio</h1>
+				<p class = "lato regular" style="margin-bottom: 5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Big Show! If you’re a game major at Champlain College every year you are thrust into a team with every other game major to create a game! At the beginning it’s on small scale, only having a month with four other developers, but by the end you are in a team of roughly 10 people with several months to create a fuller game! I'll be unpacking a couple of those game experiences.</p>
+				<h2 class = "lato bold" style="display: inline; argin-top: 5%;">Studio II</h2> 
+				<div class="colorLink" style="display: inline;">
+    			<a class="lato light" href="./build/TabbyTower.zip" download="TabbyTower.zip" style="display: inline;">(Build)</a></div>
+				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is where I really mastered the idea of working in a team on a real project. I had lots of iterative team experiences throughout college, starting with smaller projects that were designed to end quickly. But in this larger team my role included guiding the direction of the project and solving problems the team agrees require focus. Specifically I was the lead on character implementation, focusing on fluid game feel while pushing the functionality for greater player freedom. Though there were definitely pieces of the project I would do differently now I am very proud of my work on this project! One of my best experiences at college until capstone!</p>
+			</main>
+			<aside1>
+				<!--<img src="./assets/gifs/TabbyTower.gif" alt="A gif of TabbyTower" style="margin-right: -150%" class = "TabbyTowerGif right"/>-->
+				<video class="TabbyTowerVid" width="460" autoplay muted loop playsinline >
+  					<source src="./assets/gifs/TabbyTower.mp4" type="video/mp4">
+					Your browser does not support the video tag.
+				</video>
+			</aside1>
+			<main>
+				<h2 class = "lato bold left" style="display: inline; margin-top: -0.5%; margin-right: 1%">Capstone</h2> 
+				<div class="colorLink" style="display: inline;">
+    			<a class="lato light" href="" download="" style="display: inline;">(Build coming soon)</a></div>
+				<p class = "lato regular left" style="margin-top:1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Capstone project is almost exactly the same as Studio II, except we all have more experience, more time to focus on it, and fewer classes to distract, it’s a main priority. This experience takes place over two semesters, culminating first in the fall with Greenlight where half the teams are cut. Then in the second semester surviving teams absorb cut team members who help to polish the game before it’s sold! In both project complexity and team management, this high pressure environment is one that I am now prepared to thrive in. In this project I’m working as a gameplay programmer, using my diverse experience to improve player experience. I’ve worked on networking for global multiplayer, behavior tree for enemy AI, graphics programming, physics, just to name a few examples; all to say it's been a challenging project with plenty of depth to explore.</p>
+				<p class = "lato regular right" style="margin-top:1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trying to explain to employers what exactly I'm getting from this is somewhat difficult while still in the middle of the process. What I can say is that learning how to trust colleagues and how to effectively communicate within the agile process almost makes the student debt worth it. In all seriousness, I feel ready to take my experience to the next level, and I'm excited to see what's ahead!</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>Please reach out if you have any questions or feedback!</p>
+				<p>&nbsp;</p>
+			</main>
+			<aside1>
+				<img src="./assets/gifs/VilianousIntent.gif" alt="A gif of Vilianous Intent graybox" style="margin-right: -150%" class = "VilianousIntentGif right"/>
+			</aside1>
+			<aside2>
+				<img src="./assets/images/Temp.jpg" alt="A image of Temp" style="margin-right: -130%" class = "Temp right"/>
+			</aside2>
+		</body>
+	</div>
+</html>

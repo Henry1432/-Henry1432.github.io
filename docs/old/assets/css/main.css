@@ -1,0 +1,224 @@
+/*getting lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #06101F;
+  color: #FFF5DA;
+  font-size: 1.3vw;
+}
+
+header{
+	margin-top: 5%;
+  font-size: 1.3vw;
+  line-height: 2vw;
+}
+
+main {
+	display: inline-block;
+	float: center;
+	width: 85%;
+	margin-left: 10px;
+	margin-right: 5px;
+	line-height: 2vw;
+}
+
+aside1{
+	display: inline-block;
+	float: right;
+	width: 16%;
+	margin-top: 10%;
+    margin-right: 15%;
+
+}
+aside2{
+	display: inline-block;
+	float: left;
+	width: 14%;
+	margin-top: 10%;
+	margin-right: 20%;
+	margin-left: -10%;
+}
+.profile{
+    background-position: left; /* Center the image */
+    float: left;
+    width: 200%; /* Full width */
+    border-radius: 10%;
+    margin-top: -250%;
+}
+.takImage{
+	background-position: left; /* Center the image */
+    float: left;
+    width: 225%; /* Full width */
+    border-radius: 10%;
+    margin-top: -215%;
+}
+.takGif{
+	background-position: left; /* Center the image */
+    float: left;
+    width: 240%; /* Full width */
+    border-radius: 10%;
+    margin-top: -170%;
+}
+.chessGif{
+	background-position: left; /* Center the image */
+    float: left;
+    width: 250%; /* Full width */
+    border-radius: 10%;
+    margin-top: -260%;
+}
+
+.CaveImage{
+	background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 215%; /* Full width */ 
+    height: 400px;
+    border-radius: 10%;
+    margin-top: -230%;
+}
+
+.Kuwahara{
+	background-position: right; /* Center the image */
+    float: right;
+    width: 225%; /* Full width */
+    border-radius: 10%;
+    margin-top: -240%;
+}
+.Comic{
+	background-position: right; /* Center the image */
+    float: right;
+    width: 215%; /* Full width */
+    border-radius: 10%;
+    margin-top: -240%;
+}
+
+.TabbyTowerVid{
+	background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 270%; /* Full width */ 
+    border-radius: 10%;
+    margin-top: -180%;
+    margin-right: -140%;
+}
+.CaveVid{
+  background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 220%; /* Full width */ 
+    border-radius: 10%;
+    margin-top: -240%;
+    margin-right: -140%;
+}
+.TabbyTowerImg{
+	background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 150%; /* Full width */ 
+    border-radius: 10%;
+    margin-top: -100%;
+}
+
+.VilianousIntentGif{
+	background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 270%; /* Full width */ 
+    border-radius: 10%;
+    margin-top: -290%;
+}
+
+.Temp{
+
+	background-position: right; /* Center the image */
+    float: right;
+    object-fit: cover; 
+    width: 190%; /* Full width */ 
+    border-radius: 10%;
+    margin-top: -600%;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 75%;
+}
+.title {
+	margin-left: 20%;
+	margin-right: auto;
+	max-width: 75%;
+	text-align: center; 
+	font-size: 2.5vw;
+}
+.subtitle {
+	margin-left: 20%;
+	margin-right: auto;
+	max-width: 75%;
+	text-align: center; 
+	margin-bottom: 8%;
+	font-size: 1vw;
+}
+.subtitle a:link {
+	color: orangered;
+}
+.subtitle a:visited {
+	color: mediumvioletred;
+}
+
+.colorLink{
+	margin-left:auto;
+	margin-right: auto;
+}
+.colorLink a:link{
+	color: orangered;
+}.link a:visited{
+	color: mediumvioletred;
+}
+/* Base class for Lato font */
+.lato {
+  font-family: "Lato", sans-serif;
+}
+
+/* Utility classes for font weight */
+.thin {
+  font-weight: 100;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.semiBold{
+  font-weight: 550;
+}
+
+.bold {
+  font-weight: 700;
+}
+bold {
+  font-weight: 800;
+}
+
+.black {
+  font-weight: 900;
+}
+
+/* Utility class for italics */
+.italic {
+  font-style: italic;
+}
+
+.left{
+	float: left;
+	margin-left: 30%;
+}
+.right{
+	float: right;
+	margin-right: 30%;
+}
