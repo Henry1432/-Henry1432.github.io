@@ -16,15 +16,15 @@
 
 		<div class="card-holder" style="position:relative; top: -2vh">
 			<div class="card">
-				<div class="card-image-placeholder"></div>
+				<img class="card-image" src="assets\images\tak.png"></img>
 				<div class="card-content">
-					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Project 1</h3>
-					<p style="font-size: clamp(1rem, 1vw, 2rem);">an example project</p>
+					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Tree Searching Algorithms</h3>
+					<p style="font-size: clamp(1rem, 1vw, 2rem);">Using Tak to explore board game ai</p>
 					<button class="projectButton" id="project1" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
 				</div>
 			</div>
 			<div class="card">
-				<div class="card-image-placeholder"></div>
+				<div class="card-image"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Project 2</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">an example project</p>
@@ -32,7 +32,7 @@
 				</div>
 			</div>
 			<div class="card">
-				<div class="card-image-placeholder"></div>
+				<div class="card-image"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Project 3</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">an example project</p>
@@ -42,7 +42,7 @@
 
 
 			<div class="card">
-				<div class="card-image-placeholder"></div>
+				<div class="card-image"></div>
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Project 4</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">an example project</p>
@@ -51,24 +51,106 @@
 			</div>
 		</div>
 
-		<div id="project1Modal" class="modal">
-			<div class="modal-content">
-				<h2>Project 1</h2>
-				<p>A modern take on the classic arcade game</p>
-				<h3>Project Details:</h3>
-				<p>This project is a reimagining of the classic Space Invaders with enhanced gameplay mechanics and online leaderboards.</p>
-				<h3>Challenges:</h3>
-				<p>One of the main challenges was balancing the difficulty curve...</p>
-				<h3>Outcome:</h3>
-				<p>The game was well-received, with over 10,000 downloads...</p>
+		<div id="project1Modal" class="modal" style="line-height:1.75">
+			<div class="modal-content" style="text-align: left;">
+				<div class="section-title" style="text-align: center; display: flex; justify-content: center;">
+					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">Tree Searching Algorithms</h2>
+				</div>
+				<div class="bubble-container" style="margin-bottom:2em">
+					<div class="bubble">
+						<span>Software Architecture </span>
+					</div>
+					<div class="bubble">
+						<span>Algorithm Optimization</span>
+					</div>
+					<div class="bubble">
+						<span>Research & Implementation</span>
+					</div>
+				</div>
+				<p style="max-width: 50%; margin-left: auto; margin-right: 0%;">
+					&emsp;&emsp;Tak is a Board Game first conceived by Patrick Rothfuss.
+					It is described as a simple but beautiful game, like chess but in the novel <cite>The Name Of the Wind</cite>.
+					This was then designed and sold in the real world!
+					The goal is to create a road from East to West or North to South. Much like chess, if you could just go twice in a row, the game would be over in a flash!
+				</p>
+				<img class="image" src="assets/images/tak.png"
+					 style="width: 25vw; max-width: 23vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -14.5em)">
 
-				<p>test</p>
-				<p>test</p>
-				<p>test</p>
-				<p>test</p>
-				<p>test</p>
-				<p>test</p>
-				<p>test</p>
+				<p style="transform: translate(0, -15em)">
+					This is all secondary to the point of what I'm trying to achieve with this project, which is the exploration of Tree Searching Algorithms.
+				</p>
+
+				<h3 style="transform: translate(0, -12em)">Setup</h3>
+				<p style="transform: translate(0, -14.5em)">
+					&emsp;&emsp;The set up for letting the player and the computer interact with the board and each other started with the Tiles and the Stones placed on them.
+					The stones can be placed as Paths which create the Road, or as Walls which block roads.
+					Finally each player gets a Capstone, which Counts as both.
+				</p>
+
+				<img class="image" src="assets/images/TileCode.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -14.5em); margin-bottom:-12em;">
+
+				<p style="transform: translate(0, -2em)">
+					&emsp;&emsp;
+					With this Base we need to make the player and the computer actually speak the same language!
+					<strong style="font-weight: 900">The crux of this is to make this as small as humanly possible for the tree algorithms.</strong>
+					Regardless of algorithm strength, missing information renders the process ineffective.
+				</p>
+
+				<img class="image" src="assets/images/Move.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -1.5em);">
+
+				<h3 style="transform: translate(0, 0)">The Good Bit</h3>
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;
+					With this requisite setup out of the way we can get to the moment I’ve all been waiting for.
+					I began by implementing MiniMax, the simple solution.
+					It starts by generating every possible move for a given board.
+					Then it generates every board for that and so on to the given depth.
+					Finally it scores the boards and seeks the highest possible score.
+					Deeper the search the better the move and the longer the process takes.
+				</p>
+				<img class="image" src="assets/images/MiniMaxing.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+				<br />
+				<p style="max-width: 50%; ">
+					&emsp;&emsp;To attempt to address this I improved the minimaxing process by adding Alpha Beta pruning, so there would be less boards actually considered.
+					<strong style="font-weight: 900">This is a logical process to cut the amount of boards considered.</strong>
+					This is done by comparing the quality of boards and concluding that the board and all deeper boards will be worse.
+					Though this did help this wasn't the true issue.
+				</p>
+
+				<img class="image" src="assets/images/MiniCode.png"
+					 style="width: 25vw; height: auto; flex-shrink: 0; transform: translate(25vw, -18em);">
+
+				<img class="image" src="assets/images/MCTS.png"
+					 style="width: 25vw; height: auto; flex-shrink: 0; transform: translate(0, -13em); margin-bottom: -13em;">
+
+				<h3 style="transform: translate(27vw, -17em)">Some Time Later</h3>
+
+				<p style="max-width: 48%; margin-left: auto; margin-right: 0%; transform: translate(0, -20em); margin-bottom: -20.75em;">
+					&emsp;&emsp;After some time to research and some time away I came back to the real problem.
+					<strong style="font-weight: 900">
+						Mini Maxing was generating hundreds of thousands of boardstates if looking any more than 4 or 5 moves ahead.
+						This is the real issue
+					</strong>, and so to solve this I decided to use a randomly based chess algorithm, the <strong style="font-weight: 900">Monte Carlo Tree Search</strong>.
+				</p>
+				<p style="transform: translate(0, -0em)">
+					The main reason I like this algorithm is because it simulates how I encounter problems.
+					It starts with one board, generates a random next board.
+					Then creates a further move from the best board.
+					<br />
+					<br />
+					This means terrible moves will not be considered, and promising moves can be given more thought.
+					This also addresses the issue of too many boards generated, because this just generates as many boards as possible in a given time period.
+					<br />
+					<br />
+					<br />
+					&emsp;&emsp;This was a really fun project to put together and gave me a great excuse to look into interesting board game ai.
+					I also got to relearn the architecture I set up originally, as this project was interrupted several times.
+					But I also know that if I got to reset this from the ground up I would put more thought into how the board is quantified into information the algorithm can use.
+					Like I said at the beginning, missing information renders the process ineffective, so how I deal with the info is just as important as the info itself.
+				</p>
 			</div>
 		</div>
 
