@@ -14,14 +14,14 @@
 			<h2 style="position: absolute; top:-8vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
 		</div>
 
-		<div style="background-color: #654321; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
+		<div style="background-color: #132B12; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; ">
 			<div class="section-text" style="flex: 1; min-width: 300px;">
 				<div class="section-title" style=" display: flex; justify-content: center; margin-left: 5vw; margin-right:5vw;">
 					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">About Me</h2>
 				</div>
 				<p style="font-size: clamp(1rem, 1.8vw, 3rem); margin-left: 5vw; margin-right: 5vw; ">
 					&emsp;&emsp;
-					Welcome! I am a gameplay programmer with years of development experience.
+					Welcome! I am a Gameplay Programmer with years of development experience.
 					Past game development I have a love for cooking, the circus arts, and film!
 					I am an absurdist, queer, and so excited to get started!
 				</p>
@@ -36,7 +36,7 @@
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Villianous Intent</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">Physics based Party Game;<br /> D-list Supervillains try to Steal from the Hero</p>
-					<button class="projectButton" id="project2" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
+					<button class="projectButton" id="project2" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
 				</div>
 			</div>
 
@@ -47,7 +47,7 @@
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">
 						Double down is a rogue-lite shooter, Gamble to beat The House
 					</p>
-					<button class="projectButton" id="project3" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
+					<button class="projectButton" id="project3" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
 				</div>
 			</div>
 
@@ -56,7 +56,7 @@
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Tree Searching Algorithms</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">Using Tak to explore board game ai</p>
-					<button class="projectButton" id="project1" style="font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750;">Read More</button>
+					<button class="projectButton" id="project1" style="background-color: #2D625E; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
 				</div>
 			</div>
 		</div>
@@ -428,13 +428,13 @@
 			<h2>Contact me!</h2>
 		</div>
 
-		<p style="transform: translate(0, 0); margin-bottom: -10vh; font-size: clamp(1rem, 1.5vw, 3rem);">
+		<p style="transform: translate(0, 0); margin-bottom: clamp(0, -12vw, 4rem); vh; font-size: clamp(1rem, 1.5vw, 3rem);">
 			&emsp;&emsp;Feel free to email me at
-			<a href="mailto:Henry.Bennett@mymail.champlain.edu" style="color: #ff6347; text-decoration: none;">Henry.Bennett@mymail.champlain.edu</a>,
+			<a href="mailto:Henry.Bennett@mymail.champlain.edu" style="color: #B84600; text-decoration: none;">Henry.Bennett@mymail.champlain.edu</a>,
 			find me on LinkedIn at
-			<a href="https://www.linkedin.com/in/real-henry-bennett/" style="color: #ff6347; text-decoration: none;" target="_blank">LinkedIn</a>,
+			<a href="https://www.linkedin.com/in/real-henry-bennett/" style="color: #B84600; text-decoration: none;" target="_blank">LinkedIn</a>,
 			or check out my resume
-			<a href="assets/Henry_Bennett_Resume.pdf" style="color: #ff6347;" download="assets/Henry_Bennett_Resume.pdf">Here</a>!
+			<a href="assets/Henry_Bennett_Resume.pdf" style="color: #B84600;" download="assets/Henry_Bennett_Resume.pdf">Here</a>!
 
 		</p>
 
@@ -488,7 +488,7 @@
 			};
 
 			function colorPick() {
-				const colors = ["#0F326D", "#004B1A", "#875105", "#3E005C", "#7A1C1C", "#167D7F", "#8f3d53", "#2e4d63", "#443866", "#7a4d77", "#527d5a"];
+                const colors = ["#A33F00", "#2D625E", "#152F13", "#333333"];
 				const bubbles = document.querySelectorAll(".bubble span");
 				const cards = document.querySelectorAll(".card");
 				let pastGen = getRandomInRange(0, colors.length - 1);
@@ -505,38 +505,14 @@
 					lastGen = colorPick;
 					bubble.style.backgroundColor = colors[colorPick];
 				});
-				let cardColors = ["#FFFFFF"];
-				cards.forEach((card, index) => {
-					while (colorPick == lastGen || colorPick == pastGen) {
-						colorPick = getRandomInRange(0, colors.length - 1);
-					}
-					pastGen = lastGen;
-					lastGen = colorPick;
-					cardColors.push(colors[lastGen]);
 
-					card.style.backgroundColor = colors[colorPick];
-				});
-
-				let buttonColor = colors[getRandomInRange(0, colors.length - 1)];
-				while (buttonColor == sideColor || cardColors.includes(buttonColor)) {
-					buttonColor = colors[getRandomInRange(0, colors.length - 1)];
-				}
-				document.documentElement.style.setProperty('--side-panels', `${sideColor} 62%`);
+                cards[0].style.backgroundColor = "#A33F00"
+                cards[1].style.backgroundColor = "#2D625E"
+                cards[2].style.backgroundColor = "#132B12"
+                document.documentElement.style.setProperty('--side-panels', `#2D625E 62%`);
 				document.documentElement.style.setProperty('--read-more', `${buttonColor}`);
 			}
 			document.addEventListener("DOMContentLoaded", function () { colorPick(); });
-			let pickColor = false;
-			let lastScrollY = window.scrollY;
-			window.onscroll = function (ev) {
-				if ((window.innerHeight + window.scrollY - 600) >= document.body.offsetHeight) {
-					pickColor = true;
-				}
-
-				if (pickColor == true && (window.innerHeight + window.scrollY - 600) < document.body.offsetHeight) {
-					colorPick();
-					pickColor = false;
-				}
-			};
 
 			function updateGradientHeight() {
 				const bodyHeight = Math.max(
