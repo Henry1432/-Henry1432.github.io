@@ -7,130 +7,529 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Henry Bennett Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
-	<script defer data-domain="henryprofile.tiiny.co" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
-	<body>
-		<div class = "container">
-			<header>
-				<nav>
-					<ul>
-						<!--<li><a href="./index.html">Home</a></li>-->
-					</ul>
-				</nav>
-			</header>
-			<main>
-				<section id = "introduction">
-					<div class="title"><h1 class = "lato bold">Welcome</h1></div>
-					<div class="subtitle"><a class = "lato regular" href = "https://www.linkedin.com/in/real-henry-bennett/">https://www.linkedin.com/in/real-henry-bennett/</a></div>
-				</section>
+	<script defer data-domain="henry1432.github.io/-Henry1432.github.io/" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
+	<body class="body-wrapper">
 
-				<h1 class = "lato bold">Introduction</h1>
-				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Champlain College is uniquely geared toward the idea of growth through constant pressure. If you can juggle five or six classes all <bold>demanding 100%</bold> of your attention while in a demanding social environment, you’re bound to learn something. Exiting this crucible, I am now able to produce engaging creative products through effective communication and problem solving in high pressure situations. I feel that the best example of this is my 2024 spring semester, so I'll be describing a select few projects.
-</p>
-			</main>
+		<div class="section-title" style="top: clamp(-20vh, -7vw, -7vw); ">
+			<h2 style="position: absolute; top:-8vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
+		</div>
 
-			<aside1>
-				<img src="./assets/images/profile.jpg" alt="An image of Henry" class = "profile"/>
-			</aside1>
-			<main>
-				<h1 class = "lato bold left" style = "margin-top: 0%">Experience in AI</h1>
-				<p class = "lato regular left" style = "margin-bottom: -10%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; I began my formal education in the use of artificial intelligence within game development during my time in Montreal. I have been learning about Neural Networks, LLMs, and other AI-driven technologies for a long time, but taking a complex problem and implementing this type of dynamic solution is a different beast entirely. At this point I have extensive experience in this area, and I feel that a good example is my Tak Project.</p>
-			</main>
-			<aside2>
-				<img src="./assets/images/TakImage.jpg" alt="An image of Tak" class = "takImage"/>
-			</aside2>
+		<div style="background-color: #132B12; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; ">
+			<div class="section-text" style="flex: 1; min-width: 300px;">
+				<div class="section-title" style=" display: flex; justify-content: center; margin-left: 5vw; margin-right:5vw;">
+					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">About Me</h2>
+				</div>
+				<p style="font-size: clamp(1rem, 1.8vw, 3rem); margin-left: 5vw; margin-right: 5vw; ">
+					&emsp;&emsp;
+					Welcome! I am a Gameplay Programmer with years of development experience.
+					Past game development I have a love for cooking, the circus arts, and film!
+					I am an absurdist, queer, and so excited to get started!
+				</p>
+			</div>
+			<div class="section-image" style=" margin-right: 5vw; flex: 1 1 20vw; min-width: 200px; width: 15em; max-width: 18em; align-content: center; ">
+				<img src="assets/images/HenryPic.png" style="width: 100%; max-width: 20em; height: auto; border-radius: 1vh;">
+			</div>
+		</div>
+		<div class="card-holder" style="position:relative; top: -2vh">
+			<div class="card">
+				<img class="card-image" src="assets\images\Villianous.png"></img>
+				<div class="card-content">
+					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Villianous Intent</h3>
+					<p style="font-size: clamp(1rem, 1vw, 2rem);">Physics based Party Game;<br /> D-list Supervillains try to Steal from the Hero</p>
+					<button class="projectButton" id="project2" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+				</div>
+			</div>
 
-			<main>
-				<h2 class = "lato bold" style="display: inline; argin-top: -10%;">Tak</h2> 
-				<div class="colorLink" style="display: inline;">
-    			<a class="lato light" href="./build/BuildShow.zip" download="BuildShow.zip" style="display: inline;">(Build)</a></div>
-				<p class = "lato regular" style="margin-bottom: 25px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tak was originally a fictional board game imagined by Patrick Rothfuss. This board game is similar to tic tac toe, except with a few modifications that make the game feel almost similar to chess. Once I had a playable version of the game running I could start working on an AI to play against.</p>
-				<p class = "lato regular right" style = "margin-bottom: -5%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For the first attempt I implemented <bold>Alpha Beta Pruning</bold>, which has pros and cons. The implementation was sound, however the concept of MiniMaxing as a whole is not optimal for a game like Tak. It has countless board states especially as the stones(game pieces) stack higher. When MiniMaxing generates the full breadth of future boards the “right” heuristic will find the “right” move. This works for small scale things and struggles here.  No matter how much optimization you throw at the problem, given the number of legal moves allowed, searching beyond 3 or 4 moves with a game like this is infeasible <bold>for this algorithm.</bold></p>
-			</main>
-			<aside1>
-				<img src="./assets/gifs/Tak.gif" alt="An gif of Tak" class = "takGif"/>
-			</aside1>
+			<div class="card">
+				<img class="card-image" src="assets\images\DoubleDown.png"></img>
+				<div class="card-content">
+					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Double Down</h3>
+					<p style="font-size: clamp(1rem, 1vw, 2rem);">
+						Double down is a rogue-lite shooter, Gamble to beat The House
+					</p>
+					<button class="projectButton" id="project3" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+				</div>
+			</div>
 
-			<main>
-				<p class = "lato regular" style="margin-bottom: 20%;margin-top: -30%; margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; After this experience I worked with a friend on some more well-trodden ground, a chess algorithm.</p>
-			</main>
+			<div class="card">
+				<img class="card-image" src="assets\images\tak.png"></img>
+				<div class="card-content">
+					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Tree Searching Algorithms</h3>
+					<p style="font-size: clamp(1rem, 1vw, 2rem);">Using Tak to explore board game ai</p>
+					<button class="projectButton" id="project1" style="background-color: #2D625E; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+				</div>
+			</div>
+		</div>
 
-			<main>
-				<h2 class = "lato bold left" style="margin-left: 40%; margin-right: -10%; margin-top: -20%">Chess Investigation</h2>
-				<p class = "lato regular left" style="margin-left: 40%; margin-right: -10%; margin-top: -15%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We investigated several different search algorithms and to implement them effectively.  After some deliberation we decided to implement the <bold>Monte Carlo Tree Search</bold>. This algorithm is particularly good with the sorts of constraints games like chess and tak deal with, and resembles how I think about problem solving. Try to analyze what the “best” move is and don't think about the rest. This algorithm's strength is also its greatest pitfall. Similar to humans, it can’t think of everything; being based on whatever random moves it analyzes using a heuristic to value check the boards produced.</p>
-			</main>
-			<aside2>
-				<img src="./assets/gifs/chess.gif" alt="An gif of chess" class = "chessGif"/>
-			</aside2>
-			<main>
-				<p class = "lato regular" style="margin-top: -10%; margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; While this algorithm is not perfect it is extremely effective, securing fourth place in the class chess tournament!  I also particularly like it, not despite, but because of its human flair. With this investigation and contest aside we can talk about next steps.</p>
-				<h2 class = "lato bold" style="margin-top: 3%">Next Steps</h2>
-					<p class = "lato regular" style="margin-right: -10%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The board game is fine on its own. I might use the experience I’ve gained since I made this project to tighten up the optimization, but the main thing is altering the strategy of the bot. This sounds intimidating at first, but based on my experience in system architecture I could make the MCTS in its own ecosystem and then slot it in place of the old algorithm without skipping a beat! I’ll update the state of this project as I get the time to complete these steps if I choose to revisit this project.</p>
-				<h1 class = "lato bold right" style="margin-top: 8%;">Graphics Programming</h1>
-				<p class = "lato regular left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the average Game Programming problem is like a jigsaw puzzle, fitting algorithms and designs together to create a powerful solution, I would describe Graphics Programming like fixing a pocket watch. Each tiny gear has its perfect place, and if any piece falls out then the whole system goes kaput.  All of this to say, despite not really enjoying the poorly supported process of debugging graphics programming, I am familiar persevering through difficulty to get great results.</p>
-			</main>
-			<aside2>
-				<img src="./assets/gifs/Kuwahara1.gif" alt="An gif of Kuwahara" style="margin-right: -140%; margin-bottom: -20%;" class = "Kuwahara right"/>
-			</aside2>
-			<main>
-				<h2 class = "lato bold" style="margin-top: -15%">Comic Book Filter</h2>
-				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Using these encapsulated, delicate tools, with the larger skills of game programming that I have mastered I can create customized effects that are especially fascinating. During this project I was once again working in a team, using procedural generation with post processing effects to stylize randomized scenes. I implemented the Kuwahara Filter to tailor the look of our project.</p>
-			</main>
-			<aside1>
-				<!--<img src="./assets/gifs/ComicFilter.gif" alt="An gif of ComicFilter" style="margin-right: -160%" class = "Comic right"/>-->
-				<!--<img src="./assets/images/cave.jpg" alt="An image of generated cave" style="margin-right: -160%" class = "CaveImage right"/>-->
-				<!--<img src="./assets/gifs/Cave.gif" alt="A gif of generated cave" style="margin-right: -150%" class = "CaveImage right"/>-->
-				<video class="CaveVid" width="460" autoplay muted loop playsinline >
-  					<source src="./assets/gifs/Cave.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</aside1>
-			<main>
-				<h2 class = "lato bold" style="margin-top: -10%">A Brief History</h2>
-				<p class = "lato regular">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Kuwahara filter, known for its painterly effect, was originally invented in Japan as heart image denoising software in the 1970s. This is why it creates the blocks of color, resembling brush strokes. </p>
+		<div id="project1Modal" class="modal" style="line-height:1.75">
+			<div class="modal-content" style="text-align: left;">
+				<div class="section-title" style="text-align: center; display: flex; justify-content: center;">
+					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">Tree Searching Algorithms</h2>
+				</div>
+				<div class="bubble-container" style="margin-bottom:2em">
+					<div class="bubble">
+						<span>Software Architecture </span>
+					</div>
+					<div class="bubble">
+						<span>Algorithm Optimization</span>
+					</div>
+					<div class="bubble">
+						<span>Research & Implementation</span>
+					</div>
+				</div>
+				<p style="max-width: 50%; margin-left: auto; margin-right: 0%;">
+					&emsp;&emsp;Tak is a Board Game first conceived by Patrick Rothfuss.
+					It is described as a simple but beautiful game, like chess but in the novel <cite>The Name Of the Wind</cite>.
+					This was then designed and sold in the real world!
+					The goal is to create a road from East to West or North to South. Much like chess, if you could just go twice in a row, the game would be over in a flash!
+				</p>
+				<img class="image" src="assets/images/tak.png"
+					 style="width: 25vw; max-width: 23vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -14.5em)">
 
-				<h2 class = "lato bold left" style="margin-top: 3%;">Updates!</h2>
-				<p class = "lato regular left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Building on this foundation using a few other techniques we can tweak the look! Some blur here, a depth based outline filter there, and presto we can update this filter from the 70s to get a new effect! This stylistically aligns with my vision, but it is not optimized. In its current state the filter is an interesting exercise but not universally supported. If I were to actually use this in a game I would need to focus on optimizing these effects.</p>
-			</main>
-			<aside2>
-				<img src="./assets/gifs/ComicFilter.gif" alt="An gif of ComicFilter" style="margin-right: -140%" class = "Comic right"/>
-			</aside2>
+				<p style="transform: translate(0, -15em)">
+					This is all secondary to the point of what I'm trying to achieve with this project, which is the exploration of Tree Searching Algorithms.
+				</p>
 
-			<aside1>
-				<img src="./assets/images/TabbyTower.png" alt="A gif of TabbyTower" style="margin-right: -175%; margin-bottom: -5%;" class = "TabbyTowerImg right"/>
-			</aside1>
-			<main>
-				<h1 class = "lato bold" style="margin-top: -20%;">Studio</h1>
-				<p class = "lato regular" style="margin-bottom: 5%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Big Show! If you’re a game major at Champlain College every year you are thrust into a team with every other game major to create a game! At the beginning it’s on small scale, only having a month with four other developers, but by the end you are in a team of roughly 10 people with several months to create a fuller game! I'll be unpacking a couple of those game experiences.</p>
-				<h2 class = "lato bold" style="display: inline; argin-top: 5%;">Studio II</h2> 
-				<div class="colorLink" style="display: inline;">
-    			<a class="lato light" href="./build/TabbyTower.zip" download="TabbyTower.zip" style="display: inline;">(Build)</a></div>
-				<p class = "lato regular right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is where I really mastered the idea of working in a team on a real project. I had lots of iterative team experiences throughout college, starting with smaller projects that were designed to end quickly. But in this larger team my role included guiding the direction of the project and solving problems the team agrees require focus. Specifically I was the lead on character implementation, focusing on fluid game feel while pushing the functionality for greater player freedom. Though there were definitely pieces of the project I would do differently now I am very proud of my work on this project! One of my best experiences at college until capstone!</p>
-			</main>
-			<aside1>
-				<!--<img src="./assets/gifs/TabbyTower.gif" alt="A gif of TabbyTower" style="margin-right: -150%" class = "TabbyTowerGif right"/>-->
-				<video class="TabbyTowerVid" width="460" autoplay muted loop playsinline >
-  					<source src="./assets/gifs/TabbyTower.mp4" type="video/mp4">
-					Your browser does not support the video tag.
-				</video>
-			</aside1>
-			<main>
-				<h2 class = "lato bold left" style="display: inline; margin-top: -0.5%; margin-right: 1%">Capstone</h2> 
-				<div class="colorLink" style="display: inline;">
-    			<a class="lato light" href="" download="" style="display: inline;">(Build coming soon)</a></div>
-				<p class = "lato regular left" style="margin-top:1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Capstone project is almost exactly the same as Studio II, except we all have more experience, more time to focus on it, and fewer classes to distract, it’s a main priority. This experience takes place over two semesters, culminating first in the fall with Greenlight where half the teams are cut. Then in the second semester surviving teams absorb cut team members who help to polish the game before it’s sold! In both project complexity and team management, this high pressure environment is one that I am now prepared to thrive in. In this project I’m working as a gameplay programmer, using my diverse experience to improve player experience. I’ve worked on networking for global multiplayer, behavior tree for enemy AI, graphics programming, physics, just to name a few examples; all to say it's been a challenging project with plenty of depth to explore.</p>
-				<p class = "lato regular right" style="margin-top:1%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Trying to explain to employers what exactly I'm getting from this is somewhat difficult while still in the middle of the process. What I can say is that learning how to trust colleagues and how to effectively communicate within the agile process almost makes the student debt worth it. In all seriousness, I feel ready to take my experience to the next level, and I'm excited to see what's ahead!</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>&nbsp;</p>
-				<p>Please reach out if you have any questions or feedback!</p>
-				<p>&nbsp;</p>
-			</main>
-			<aside1>
-				<img src="./assets/gifs/VilianousIntent.gif" alt="A gif of Vilianous Intent graybox" style="margin-right: -150%" class = "VilianousIntentGif right"/>
-			</aside1>
-			<aside2>
-				<img src="./assets/images/Temp.jpg" alt="A image of Temp" style="margin-right: -130%" class = "Temp right"/>
-			</aside2>
-		</body>
-	</div>
+				<h3 style="transform: translate(0, -12em)">Setup</h3>
+				<p style="transform: translate(0, -14.5em)">
+					&emsp;&emsp;The set up for letting the player and the computer interact with the board and each other started with the Tiles and the Stones placed on them.
+					The stones can be placed as Paths which create the Road, or as Walls which block roads.
+					Finally each player gets a Capstone, which Counts as both.
+				</p>
+
+				<img class="image" src="assets/images/TileCode.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -14.5em); margin-bottom:-12em;">
+
+				<p style="transform: translate(0, -2em)">
+					&emsp;&emsp;
+					With this Base we need to make the player and the computer actually speak the same language!
+					<strong style="font-weight: 900">The crux of this is to make this as small as humanly possible for the tree algorithms.</strong>
+					Regardless of algorithm strength, missing information renders the process ineffective.
+				</p>
+
+				<img class="image" src="assets/images/Move.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, -1.5em);">
+
+				<h3 style="transform: translate(0, 0)">The Good Bit</h3>
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;
+					With this requisite setup out of the way we can get to the moment I’ve all been waiting for.
+					I began by implementing MiniMax, the simple solution.
+					It starts by generating every possible move for a given board.
+					Then it generates every board for that and so on to the given depth.
+					Finally it scores the boards and seeks the highest possible score.
+					Deeper the search the better the move and the longer the process takes.
+				</p>
+				<img class="image" src="assets/images/MiniMaxing.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+				<br />
+				<p style="max-width: 50%; ">
+					&emsp;&emsp;To attempt to address this I improved the minimaxing process by adding Alpha Beta pruning, so there would be less boards actually considered.
+					<strong style="font-weight: 900">This is a logical process to cut the amount of boards considered.</strong>
+					This is done by comparing the quality of boards and concluding that the board and all deeper boards will be worse.
+					Though this did help this wasn't the true issue.
+				</p>
+
+				<img class="image" src="assets/images/MiniCode.png"
+					 style="width: 25vw; height: auto; flex-shrink: 0; transform: translate(25vw, -18em);">
+
+				<img class="image" src="assets/images/MCTS.png"
+					 style="width: 25vw; height: auto; flex-shrink: 0; transform: translate(0, -13em); margin-bottom: -13em;">
+
+				<h3 style="transform: translate(27vw, -17em)">Some Time Later</h3>
+
+				<p style="max-width: 48%; margin-left: auto; margin-right: 0%; transform: translate(0, -20em); margin-bottom: -20.75em;">
+					&emsp;&emsp;After some time to research and some time away I came back to the real problem.
+					<strong style="font-weight: 900">
+						Mini Maxing was generating hundreds of thousands of boardstates if looking any more than 4 or 5 moves ahead.
+						This is the real issue
+					</strong>, and so to solve this I decided to use a randomly based chess algorithm, the <strong style="font-weight: 900">Monte Carlo Tree Search</strong>.
+				</p>
+				<p style="transform: translate(0, -0em)">
+					The main reason I like this algorithm is because it simulates how I encounter problems.
+					It starts with one board, generates a random next board.
+					Then creates a further move from the best board.
+					<br />
+					<br />
+					This means terrible moves will not be considered, and promising moves can be given more thought.
+					This also addresses the issue of too many boards generated, because this just generates as many boards as possible in a given time period.
+					<br />
+					<br />
+					<br />
+					&emsp;&emsp;This was a really fun project to put together and gave me a great excuse to look into interesting board game ai.
+					I also got to relearn the architecture I set up originally, as this project was interrupted several times.
+					But I also know that if I got to reset this from the ground up I would put more thought into how the board is quantified into information the algorithm can use.
+					Like I said at the beginning, missing information renders the process ineffective, so how I deal with the info is just as important as the info itself.
+				</p>
+			</div>
+		</div>
+
+		<div id="project2Modal" class="modal" style="line-height:1.75">
+			<div class="modal-content" style="text-align: left;">
+				<div class="section-title" style="text-align: center; display: flex; justify-content: center;">
+					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">Villianous Intent</h2>
+				</div>
+				<div class="bubble-container" style="margin-bottom:2em">
+					<div class="bubble">
+						<span>Agile Large Team Development</span>
+					</div>
+					<div class="bubble">
+						<span>AI Behavior Programming</span>
+					</div>
+					<div class="bubble">
+						<span>Networking in Unity</span>
+					</div>
+				</div>
+				<p style="transform: translate(0, -0em)">
+					Villainous Intent is a physics based party game where d-list supervillains try to steal from the hero!
+				</p>
+
+				<h3 style="transform: translate(0, 0)">Concepting</h3>
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;Champlain College’s Capstone is an effort to create the <strong style="font-weight: 900">experience of taking a project from concept to publication in a few short months.</strong>
+					This means we have a wildly brief 2 weeks to concept out a set of ideas and land on 1.
+					How our team decided to go about this is to spend 1 sprint on 1 concept and the second on another concept.
+					There are several problems with this design but at its heart this project is an educational experience over an endeavor to make a product.
+					Though I am obviously very happy with the final product, more than anything this was a profoundly useful learning experience.
+					<br /><br />
+					&emsp;&emsp;The heart of our concepting was to create a physics based party game to lean on our team’s technical advantage.
+					We began with a cooking game, which does not really matter as this is not the game that went forward.
+					During this week we did explorations and proofs of concept, and it went exceptionally well!
+					<strong style="font-weight: 900">The team was ready to just push forward with this idea, but I personally pushed to give options and continue concepting, which I still believe was the right decision.</strong>
+					However how concepting continued was not done perfectly.
+				</p>
+
+				<img class="image" src="assets/images/Cooking.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;As the team continued we tried to flesh out a second concept.
+					Through the week we made much aesthetic progress, but little real progress was made mechanically.
+					Though this idea was less sound it was more exciting to the majority of the team.
+					The technical team was not confident that the idea was feasible.
+					<strong style="font-weight: 900">However as the team was all close friends communication was more complex and we decided to move forward with the mechanically weaker idea.</strong>
+					<br />
+					<br />
+				</p>
+
+				<h3 style="transform: translate(0, 0)">Timeline<br /></h3>
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;This false start was a fantastic learning experience, especially when attached to a project that I am so deeply proud of!
+					The choices made along the way past concepting were sound given the challenging circumstances.
+					How I spent the beginning of the project was supporting systems that needed my attention:
+					<strong style="font-weight: 900">setting up versions of networking and local multiplayer, Working on setting up behavior trees for ai, modifying a ragdoll controller to fit our specifications.</strong>
+					Though none were areas of specific expertise, I was still able to achieve whatever the team required for the final product.
+				</p>
+				<img class="image" src="assets/images/Network.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<p style="transform: translate(0, -0em)">
+					&emsp;&emsp;The Ai began with the implementation of a behavior tree.
+					A simple evolution of the state machine, connecting nodes that link together cause more complex behaviors.
+					<strong style="font-weight: 900">This allowed for rapid iteration and response to the weekly testing.</strong>
+					The main focus of the AI was <strong style="font-weight: 900">balancing threats to the player and interrupting gameplay experience.</strong>
+					This meant communicating with the player, interacting with design and art teams to create an environment that the ai could fit into.
+					I also personally dedicated research to how the AI could be done better by comparing to other games and seeing how realistic it would be to repeat.
+				</p>
+
+				<img class="image" src="assets/images/Behavior.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<img class="image" src="assets/images/Intent.png"
+					 style="width: 21vw; height: auto; flex-shrink: 0; transform: translate(27vw, 0);">
+
+				<p style="max-width: 50%; transform: translate(0, -18em); margin-bottom: -17em">
+					&emsp;&emsp;As the project progressed we believed that networking would not be essential for the final project so we dropped it, allowing me to focus on ai.
+					With the focus on ai interactions that I implemented above I also supported further development in required areas.
+					Supporting the development of the player ability system, continued iteration of the ragdoll controller, among other things.
+				</p>
+				<p style="transform: translate(0, -1.6em)">
+					Separate from the technical development <strong style="font-weight: 900">I also performed the greenlight standup to the entirety of the college as well as alumni.</strong>
+					<br />
+					<br />
+					&emsp;&emsp;This is primarily a learning experience and I have learned everything I could possibly ask for from this project.
+					<strong style="font-weight: 900">Improving ability to assess feasibility and necessity, learning more about effective communication within and outside disciplines. </strong>
+					With this achievement complete we were then on-boarded onto other projects that required our support.
+					With this in mind I’d like to take away some final thoughts on this project.
+				</p>
+				<br />
+				<br />
+				<img class="image" src="assets/images/Fam.png"
+					 style="width: 25vw; height: auto; flex-shrink: 0; transform: translate(0, 0);">
+
+				<h3 style="transform: translate(40%, -17em)">Final Product</h3>
+
+				<p style="max-width: 48%; margin-left: auto; margin-right: 0%; transform: translate(0, -20em); margin-bottom: -20.75em;">
+					&emsp;&emsp;Villainous Intent is a project I am deeply proud of.
+					I began working on games in freshman year with this team of people and we got to work together until this project.
+					Our silly dynamic is what allowed for such a fun social game. I am equally proud of my ability to fill in the gaps in technical need, and complete the work necessary to create a fun game!
+				</p>
+
+				<p style="transform: translate(0, 3em)">
+					&emsp;&emsp;Past my pride and simpler takeaways lies a more important lesson.
+					A team of people who are all friends doesn't actually work.
+					It interferes with important reports of needs through the pipelines.
+					This was felt through the project in many areas.
+					<strong style="font-weight: 900">At its root, the only issue of this project was that the disciplines weren’t effectively communicating.</strong>
+					I feel overwhelmingly lucky that I got to get past this lesson in a safe college environment.
+					I feel like a better programmer and a better team member after this project, and I could feel my changes much more strongly in my experience on <cite>Double Down</cite>.
+				</p>
+			</div>
+		</div>
+
+		<div id="project3Modal" class="modal" style="line-height:1.75">
+			<div class="modal-content" style="text-align: left;">
+				<div class="section-title" style="text-align: center; display: flex; justify-content: center;">
+					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">Double Down</h2>
+				</div>
+				<div class="bubble-container" style="margin-bottom:2em">
+					<div class="bubble">
+						<span>Unreal Development</span>
+					</div>
+					<div class="bubble">
+						<span>Gameplay Programming</span>
+					</div>
+					<div class="bubble">
+						<span>Combat Design</span>
+					</div>
+				</div>
+
+				<p style="transform: translate(0, 0)">
+					Double down is a rogue-lite shooter in a casino! Gambling against the floor bots to beat the house!
+				</p>
+
+				<h3 style="transform: translate(0, 0)">Exciting New Challenges</h3>
+
+				<p style="transform: translate(0, 0)">
+					&emsp;&emsp;Before moving to Double Down I never had the chance to learn the ins and outs of unreal.
+					I feel so lucky to have had the opportunity to use it on such an interesting project!
+					That being said, <strong style="font-weight: 900">undertaking this challenge while being onboarded to a new team was a really exciting challenge. </strong>
+					This meant communicating with the team very openly and working mindfully.
+				</p>
+
+				<p style="max-width: 50%; transform: translate(0, 0);">
+					&emsp;&emsp;I started by creating a system needed to create a boss room.
+					This lower pressure task allowed me to add value to the team while focusing on the endeavors of learning unreal and the onboarding process.
+					The lead programmer Ashley Tucker and producer Preston Suarez were integral in the smoothness of this transition, along with my roommate and product owner Willow O’Hara.
+				</p>
+
+				<img class="image" src="assets/images/Boss.png"
+					 style="width: 23vw; height: auto; flex-shrink: 0; transform: translate(26vw, -19em); margin-bottom:-17.5em;">
+
+
+				<p style="transform: translate(0, 0)">
+					&emsp;&emsp;I then transitioned more truly to my role of gameplay programmer by integrating my boss system into the larger boss level!
+					This allowed me to apply the understanding I gained from the onboarding process.
+					<strong style="font-weight: 900">This went swimmingly, allowing for early testing of the boss room! </strong>
+					With me more integrated into the team and the idea of unreal I jumped into the larger goals of the team.
+				</p>
+
+				<h3 style="transform: translate(0, 0)">Exciting New Perks</h3>
+
+				<p style="transform: translate(0, 0)">
+					&emsp;&emsp;With unreal under my belt and an understanding of the team's goals I was able to take up my job full throttle after just a week!
+					I was very worried about this challenge but the team was able to work really well together.
+					Another perk of working on this project is I get to work much more in my wheelhouse of Gameplay programming!
+				</p>
+				<img class="image" src="assets/images/Roulette.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<p style="transform: translate(0, 0)">
+					&emsp;&emsp;
+					The first priority was to improve the gambling experience for the player, what would a casino game be without gambling?
+					This came in two fronts, one larger and one that I led.
+					Primarily we wanted to create many more upgrades for the player to receive from The Slot Machine.
+					<strong style="font-weight: 900">
+						This is the primary way players interact with combat, so adding more depth to this system was a priority throughout the project!
+						I also led the Roulette system, allowing players to gamble for rewards at the risk of defeating challenges.
+					</strong>
+					<br />
+					<br />
+					&emsp;&emsp;
+					This Roulette system was then expanded while I got to use my ai experience for this project to expand the enemy interactions.
+					When I came into this project they had lots of ideas for brand new enemies to add.
+					Though I did have time to implement some of these enemies I knew to create more real variety in the enemy interactions we would need to do wider changes.
+					<strong style="font-weight: 900">
+						The idea we landed on was creating an upgrade system for the enemies.
+						An Elite Variant System to create far more interesting combat interactions
+					</strong> without actually expanding scope too much.
+				</p>
+
+				<img class="image" src="assets/images/Enemies.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<p style="transform: translate(0, 0)">
+					<strong style="font-weight: 900">
+						The main Elite Variant System is based on an event system, allowing attachable components to activate given specific events.
+						This Supported rapid prototyping of enemy abilities and quick additions to the final product.
+					</strong>
+					The abilities are communicated by lighting the enemy in different colors.
+					We also worked to keep the enemy variants simple and understandable to the player, so they could learn what exactly they do, or if nothing else that bight color = BIG BAD!
+				</p>
+
+				<img class="image" src="assets/images/Blueprint.png"
+					 style="width: 80vw; max-width: 49vw; height: auto; flex-shrink: 0; transform: translate(0.5vw, 0);">
+
+				<p style="transform: translate(0, 0)">
+					The development of Villainous Intent was both profoundly educational and extremely valuable.
+					This being said I am more proud of the work I have done on Double Down.
+					This project has allowed me to flex my skills and support the team in making this wonderful game.
+				</p>
+
+				<h3 style="transform: translate(0, 0)">Final Product</h3>
+
+				<p style="transform: translate(0, 0)">
+					We are still in development, but the game is set to come out summer 2025 so stay tuned!
+				</p>
+			</div>
+		</div>
+
+		<div class="section-title">
+			<h2>Skills</h2>
+		</div>
+
+		<div class="bubble-container" style="margin-bottom:8vh;">
+			<div class="bubble">
+				<span>Agile Team Deveopment</span>
+			</div>
+			<div class="bubble">
+				<span>Cross-Disciplinary Collaboration</span>
+			</div>
+			<div class="bubble">
+				<span>Unity Experience</span>
+			</div>
+			<div class="bubble">
+				<span>Unreal Experience</span>
+			</div>
+			<div class="bubble">
+				<span>Gameplay</span>
+			</div>
+			<div class="bubble">
+				<span>AI</span>
+			</div>
+			<div class="bubble">
+				<span>Physics</span>
+			</div>
+			<div class="bubble">
+				<span>Graphics</span>
+			</div>
+			<div class="bubble">
+				<span>Networking</span>
+			</div>
+			<div class="bubble">
+				<span>Low and High Level Programming</span>
+			</div>
+			<div class="bubble">
+				<span>3D math</span>
+			</div>
+		</div>
+
+		<div class="section-title">
+			<h2>Contact me!</h2>
+		</div>
+
+		<p style="transform: translate(0, 0); margin-bottom: clamp(0, -12vw, 4rem); vh; font-size: clamp(1rem, 1.5vw, 3rem);">
+			&emsp;&emsp;Feel free to email me at
+			<a href="mailto:Henry.Bennett@mymail.champlain.edu" style="color: #B84600; text-decoration: none;">Henry.Bennett@mymail.champlain.edu</a>,
+			find me on LinkedIn at
+			<a href="https://www.linkedin.com/in/real-henry-bennett/" style="color: #B84600; text-decoration: none;" target="_blank">LinkedIn</a>,
+			or check out my resume
+			<a href="assets/Henry_Bennett_Resume.pdf" style="color: #B84600;" download="assets/Henry_Bennett_Resume.pdf">Here</a>!
+
+		</p>
+
+		<script>
+			function getRandomInRange(min, max) {
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			//project 1
+			const modal1 = document.getElementById("project1Modal");
+			const btn1 = document.getElementById("project1");
+
+			btn1.onclick = function () {
+				modal1.style.display = "block";
+				document.body.classList.add("modal-open"); // Disable background scrolling
+			};
+
+
+			//project 2
+			const modal2 = document.getElementById("project2Modal");
+			const btn2 = document.getElementById("project2");
+
+			btn2.onclick = function () {
+				modal2.style.display = "block";
+				document.body.classList.add("modal-open"); // Disable background scrolling
+			};
+
+			//project 3
+			const modal3 = document.getElementById("project3Modal");
+			const btn3 = document.getElementById("project3");
+
+			btn3.onclick = function () {
+				modal3.style.display = "block";
+				document.body.classList.add("modal-open"); // Disable background scrolling
+			};
+
+			//close
+			window.onclick = function (event) {
+				if (event.target === modal1) {
+					modal1.style.display = "none";
+					document.body.classList.remove("modal-open");
+				}
+				if (event.target === modal2) {
+					modal2.style.display = "none";
+					document.body.classList.remove("modal-open");
+				}
+				if (event.target === modal3) {
+					modal3.style.display = "none";
+					document.body.classList.remove("modal-open");
+				}
+			};
+
+			function colorPick() {
+                const colors = ["#A33F00", "#2D625E", "#152F13", "#333333"];
+				const bubbles = document.querySelectorAll(".bubble span");
+				const cards = document.querySelectorAll(".card");
+				let pastGen = getRandomInRange(0, colors.length - 1);
+				let lastGen = getRandomInRange(0, colors.length - 1);
+				let colorPick = getRandomInRange(0, colors.length - 1);
+
+				let sideColor = colors[getRandomInRange(0, colors.length - 1)];
+
+				bubbles.forEach((bubble, index) => {
+					while (colorPick == lastGen || colorPick == pastGen) {
+						colorPick = getRandomInRange(0, colors.length - 1);
+					}
+					pastGen = lastGen;
+					lastGen = colorPick;
+					bubble.style.backgroundColor = colors[colorPick];
+				});
+
+                cards[0].style.backgroundColor = "#A33F00"
+                cards[1].style.backgroundColor = "#2D625E"
+                cards[2].style.backgroundColor = "#132B12"
+                document.documentElement.style.setProperty('--side-panels', `#2D625E 62%`);
+				document.documentElement.style.setProperty('--read-more', `${buttonColor}`);
+			}
+			document.addEventListener("DOMContentLoaded", function () { colorPick(); });
+
+			function updateGradientHeight() {
+				const bodyHeight = Math.max(
+					document.body.scrollHeight,
+					document.documentElement.scrollHeight,
+					document.body.offsetHeight,
+					document.documentElement.offsetHeight,
+					document.body.clientHeight,
+					document.documentElement.clientHeight
+				);
+
+				document.documentElement.style.setProperty('--full-height', `${bodyHeight}px`);
+			}
+
+			window.addEventListener("load", updateGradientHeight);
+			window.addEventListener("resize", updateGradientHeight);
+
+		</script>
+	</body>
 </html>
