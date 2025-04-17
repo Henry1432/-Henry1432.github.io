@@ -8,13 +8,16 @@
 		<link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 	<script defer data-domain="henry1432.github.io/-Henry1432.github.io/" src="https://analytics.tiiny.site/js/plausible.js"></script></head>
 	<body class="body-wrapper">
-
+		<div class="mobileBuffer"></div>
 		<div class="section-title" style="top: clamp(-20vh, -7vw, -7vw); ">
-			<h2 style="position: absolute; top:-8vh; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
+			<h2 style="position: absolute; top:-1.5em; left: 50%; transform:translateX(-55%);">Henry Bennett</h2>
 		</div>
+		<a href="https://www.linkedin.com/in/real-henry-bennett/" target="_blank" rel="noopener noreferrer">
+			<img src="assets/images/linkedinLogo.png" alt="linkedin" style="width: clamp(4rem, 5em, 6em); margin: -5em auto 0; display: block;"/>
+		</a>
 
 		<div style="background-color: #132B12; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; ">
-			
+
 			<div class="section-text" style="flex: 1; min-width: 300px;">
 				<div class="section-title" style=" display: flex; justify-content: center; margin-left: 5vw; margin-right:5vw;">
 					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">About Me</h2>
@@ -26,8 +29,8 @@
 					I am an absurdist, queer, and so excited to get started!
 				</p>
 			</div>
-			<div class="section-image" style=" margin-right: 5vw; flex: 1 1 20vw; min-width: 200px; width: 15em; max-width: 18em; align-content: center; ">
-				<img src="assets/images/HenryPic.png" style="width: 100%; max-width: 20em; height: auto; border-radius: 1vh;">
+			<div class="section-image" style=" display: flex; margin-right: 5vw; flex: 1 1 20vw; min-width: 200px; min-width: 20rem; max-width: 30rem; justify-content: center; ">
+				<img src="assets/images/HenryPic.png" style="width: 100%; min-width: 20rem; max-width: 30em; height: auto; border-radius: 1vh;">
 			</div>
 		</div>
 
@@ -37,7 +40,9 @@
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Villianous Intent</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">Physics based Party Game;<br /> D-list Supervillains try to Steal from the Hero</p>
-					<button class="projectButton" id="project2" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					<div class="card-footer">
+						<button class="projectButton" id="project2" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					</div>
 				</div>
 			</div>
 
@@ -46,9 +51,11 @@
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Double Down</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">
-						Double down is a rogue-lite shooter, Gamble to beat The House
+						<br />Double down is a rogue-lite shooter, Gamble to beat The House
 					</p>
-					<button class="projectButton" id="project3" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					<div class="card-footer">
+						<button class="projectButton" id="project3" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					</div>
 				</div>
 			</div>
 
@@ -57,7 +64,9 @@
 				<div class="card-content">
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Tree Searching Algorithms</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">Using Tak to explore board game ai</p>
-					<button class="projectButton" id="project1" style="background-color: #2D625E; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					<div class="card-footer">
+						<button class="projectButton" id="project1" style="background-color: #2D625E; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+					</div>
 				</div>
 			</div>
 
@@ -65,9 +74,9 @@
 
 		<div id="project1Modal" class="modal" style="line-height:1.75">
 			<div class="modal-content" style="text-align: left;">
-				
+
 				<span class="close-btn" onclick="closeModal1()" style=" position: absolute; top: 10vw; right: 18vw; font-size: 2rem; cursor: pointer; font-weight: bold; z-index: 2; color: #A33F00"><strong style="font-weight: 900">&times;</strong></span>
-				
+
 				<div class="section-title" style="text-align: center; display: flex; justify-content: center;">
 					<h2 style="font-size: clamp(1.2rem, 4vw, 2rem);">Tree Searching Algorithms</h2>
 				</div>
@@ -499,7 +508,7 @@
 			};
 
 			function colorPick() {
-                const colors = ["#A33F00", "#2D625E", "#152F13", "#333333"];
+				const colors = ["#A33F00", "#2D625E", "#152F13", "#333333"];
 				const bubbles = document.querySelectorAll(".bubble span");
 				const cards = document.querySelectorAll(".card");
 				let pastGen = getRandomInRange(0, colors.length - 1);
@@ -517,10 +526,10 @@
 					bubble.style.backgroundColor = colors[colorPick];
 				});
 
-                cards[0].style.backgroundColor = "#A33F00"
-                cards[1].style.backgroundColor = "#2D625E"
-                cards[2].style.backgroundColor = "#132B12"
-                document.documentElement.style.setProperty('--side-panels', `#2D625E 62%`);
+				cards[0].style.backgroundColor = "#A33F00"
+				cards[1].style.backgroundColor = "#2D625E"
+				cards[2].style.backgroundColor = "#132B12"
+				document.documentElement.style.setProperty('--side-panels', `#2D625E 62%`);
 				document.documentElement.style.setProperty('--read-more', `${buttonColor}`);
 			}
 			document.addEventListener("DOMContentLoaded", function () { colorPick(); });
@@ -541,18 +550,18 @@
 			window.addEventListener("load", updateGradientHeight);
 			window.addEventListener("resize", updateGradientHeight);
 
-            function closeModal1() {
-                document.getElementById("project1Modal").style.display = "none";
-                document.body.classList.remove("modal-open");
+			function closeModal1() {
+				document.getElementById("project1Modal").style.display = "none";
+				document.body.classList.remove("modal-open");
 			}
 			function closeModal2() {
-                document.getElementById("project2Modal").style.display = "none";
-                document.body.classList.remove("modal-open");
+				document.getElementById("project2Modal").style.display = "none";
+				document.body.classList.remove("modal-open");
 			}
-            function closeModal3() {
-                document.getElementById("project3Modal").style.display = "none";
-                document.body.classList.remove("modal-open");
-            }
+			function closeModal3() {
+				document.getElementById("project3Modal").style.display = "none";
+				document.body.classList.remove("modal-open");
+			}
 
 
 		</script>
