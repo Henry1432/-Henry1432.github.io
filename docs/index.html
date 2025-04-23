@@ -16,7 +16,7 @@
 			<img src="assets/images/linkedinLogo.png" alt="linkedin" style="width: clamp(4rem, 5em, 6em); margin: -5em auto 0; display: block;"/>
 		</a>
 
-		<div style="background-color: #132B12; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; ">
+		<div style="background-color: #264a23; padding: 20px; margin-bottom: 8vh; margin: 0 -10vw 5vh -10vw; display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center; ">
 
 			<div class="section-text" style="flex: 1; min-width: 300px;">
 				<div class="section-title" style=" display: flex; justify-content: center; margin-left: 5vw; margin-right:5vw;">
@@ -65,7 +65,7 @@
 					<h3 style="font-size: clamp(1.5rem, 1.5vw, 2rem);">Tree Searching Algorithms</h3>
 					<p style="font-size: clamp(1rem, 1vw, 2rem);">Using Tak to explore board game ai</p>
 					<div class="card-footer">
-						<button class="projectButton" id="project1" style="background-color: #2D625E; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
+						<button class="projectButton" id="project1" style="background-color: #361500; font-size: clamp(1rem, 0.8vw, 2rem); font-weight: 750; ">Read More</button>
 					</div>
 				</div>
 			</div>
@@ -508,7 +508,7 @@
 			};
 
 			function colorPick() {
-				const colors = ["#A33F00", "#2D625E", "#152F13", "#333333"];
+                const colors = ["#A33F00", "#2D625E", "#264a23", "#444444"];
 				const bubbles = document.querySelectorAll(".bubble span");
 				const cards = document.querySelectorAll(".card");
 				let pastGen = getRandomInRange(0, colors.length - 1);
@@ -528,8 +528,8 @@
 
 				cards[0].style.backgroundColor = "#A33F00"
 				cards[1].style.backgroundColor = "#2D625E"
-				cards[2].style.backgroundColor = "#132B12"
-				document.documentElement.style.setProperty('--side-panels', `#2D625E 62%`);
+                cards[2].style.backgroundColor = "#264a23"
+                document.documentElement.style.setProperty('--side-panels', `#A33F00 62%`);
 				document.documentElement.style.setProperty('--read-more', `${buttonColor}`);
 			}
 			document.addEventListener("DOMContentLoaded", function () { colorPick(); });
